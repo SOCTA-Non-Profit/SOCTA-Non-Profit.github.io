@@ -1,4 +1,4 @@
-# Wonderful Landing Page Template Test
+# Wonderful Landing Page Template 
 
 ### <a href="https://wonderfullandingpage.github.io/mylandingpage/">LIVE DEMO</a> 
 

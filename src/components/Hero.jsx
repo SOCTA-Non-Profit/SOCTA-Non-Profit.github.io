@@ -1,5 +1,3 @@
-import { useSelector } from "react-redux";
-import { selectData } from "../pages/homeSlice";
 import { Link } from "react-scroll";
 import styled from "styled-components";
 // Icons
@@ -78,27 +76,29 @@ const StyledHero = styled.header`
       background-size: cover;
     }
   }
+  @media screen and (max-width: 767px) {
+    &::before {
+      background: ${({ theme }) =>
+        theme.name === "light"
+          ? `url(${Light}) center top fixed no-repeat`
+          : `url(${Dark}) center top fixed no-repeat`};
+      background-size: contain;
+      background-position: center; /* Center the background image */
+      background-attachment: scroll
+    }
 `;
 
 export default function Hero() {
-  const { name } = useSelector(selectData);
+  //const { name } = useSelector(selectData);
 
   return (
     <StyledHero>
       <Container>
         <Row className="align-items-center text-center">
           <Col>
-            <h1 className="mb-3 display-3 title">{name}</h1>
             <div className="d-flex align-items-center justify-content-center">
-              <SocialLinks />
+             
             </div>
-          </Col>
-          <Col className="d-none d-md-block">
-            <img
-              src={Logo}
-              alt="React Logo"
-              className="w-75 mx-auto hero-img"
-            />
           </Col>
         </Row>
         <Row className="align-items-end down-container">

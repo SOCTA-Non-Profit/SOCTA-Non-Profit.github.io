@@ -5,6 +5,7 @@ import { skillData, resume } from "../data";
 // Components
 import { Button, Col, Container, Row } from "react-bootstrap";
 import { Title } from "./globalStyledComponents";
+import video from '../images/sri-rama-navami-promo.mp4'; // Importing your video file path
 
 export default function Skills() {
   const { theme } = useAppContext();
@@ -14,20 +15,16 @@ export default function Skills() {
       <section className="section">
         <Container className="text-center">
           <Title>
-            <h2>Skills</h2>
+            <h2>Upcoming Events</h2>
             <div className="underline"></div>
           </Title>
           <Row className="mt-3 align-items-center">
-            {skillData.map((skills) => {
-              return (
-                <Col xs={4} key={skills.id} className="my-md-5">
-                  <figure>
-                    {skills.skill}
-                    <figcaption>{skills.name}</figcaption>
-                  </figure>
-                </Col>
-              );
-            })}
+            <Col xs={12} className="my-md-5">
+              <video controls width="100%">
+                <source src={video} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </Col>
           </Row>
           {resume && (
             <a href={resume}>

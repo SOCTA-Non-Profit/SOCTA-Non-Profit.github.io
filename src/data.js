@@ -31,8 +31,11 @@ export const Blog = <Icon icon="ph:link-bold" />;
   Add a second paragraph for the about me section.
 */
 export const moreInfo =
-  "I enjoy learning about technology and helping others use it to improve their lives and be more productive. I built this site with React, React Bootstrap, Redux, and the GitHub REST API.";
-
+  "Welcome to the Southern Ontario Cultural Telugu Association (SOCTA)";
+export const moreInfo_Line2 = "At SOCTA, we are dedicated to celebrating and promoting the rich cultural heritage of Telugu-speaking communities in Southern Ontario. As a non-profit organization, we strive to create vibrant and inclusive spaces where members of the Telugu diaspora can come together to share their traditions, language, and values."
+export const moreInfo_Line3 = "Our Mission: Our mission at SOCTA is to foster a sense of belonging and connection among Telugu individuals and families living in Southern Ontario. Through a variety of cultural events, activities, and initiatives, we aim to preserve and promote the diverse heritage of Telugu-speaking people while also bridging generational and geographical gaps.";
+export const moreInfo_Line4 = "What We Do: From traditional festivals like Sankranthi and Ugadi to contemporary celebrations, we organize a diverse range of cultural events throughout the year. We offer Telugu language classes, music and dance workshops, and other artistic programs to nurture and showcase the talents of our community members."
+export const moreInfo_Line5 = "Community Outreach: SOCTA actively engages with the broader community through outreach programs, collaborations with other cultural organizations, and participation in local events.\n\nSocial and Networking Opportunities: We provide platforms for networking, socializing, and building connections within the Telugu community through gatherings, picnics, and special events. Get Involved, Whether you're a long-time resident or new to the region, we welcome you to join us in celebrating the vibrant culture and traditions of Telugu-speaking communities. Explore our upcoming events, become a member, or volunteer with us to make a difference and connect with fellow Telugu enthusiasts."
 /* Skills
  ************************************************************** 
   Add or remove skills in the SAME format below, choose icons here - https://icon-sets.iconify.design/

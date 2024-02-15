@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 import { selectData } from "../pages/homeSlice";
 import { Element } from "react-scroll";
 // Data
-import { moreInfo } from "../data";
+import { moreInfo, moreInfo_Line2, moreInfo_Line3, moreInfo_Line4, moreInfo_Line5 } from "../data";
 // Components
 import { Col, Container, Row } from "react-bootstrap";
 import { Title } from "./globalStyledComponents";
@@ -27,7 +27,7 @@ export default function AboutMe() {
         <Container>
           <Container className="d-flex">
             <Title>
-              <h2>About Me</h2>
+              <h2>About SOCTA</h2>
               <div className="underline"></div>
             </Title>
           </Container>
@@ -36,16 +36,11 @@ export default function AboutMe() {
               <Container>
                 <p>{bio}</p>
                 {moreInfo && <p>{moreInfo}</p>}
+                {<p>{moreInfo_Line2}</p>}
+                {<p>{moreInfo_Line3}</p>}
+                {<p>{moreInfo_Line4}</p>}
+                {<p>{moreInfo_Line5}</p>}
               </Container>
-            </Col>
-            <Col className="d-none d-md-block text-center">
-              <img
-                src={avatar_url}
-                alt="GitHub Avatar"
-                loading="lazy"
-                className="mx-auto rounded-circle"
-                style={{ width: "15rem", height: "15rem" }}
-              />
             </Col>
           </Row>
         </Container>

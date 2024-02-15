@@ -18,7 +18,7 @@ export { HeroDark as Dark };
  **************************************************************
   Add your GitHub username (string - "YourUsername") below.
 */
-export const githubUsername = "manavpidugu";
+export const githubUsername = "socta-non-profit";
 
 // Navbar Logo image
 export const navLogo = undefined;

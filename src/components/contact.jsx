@@ -22,7 +22,7 @@ export default function Contact() {
           </Title>
         </Container>
         <Container>
-          <ContactForm />
+        <iframe title="SriRama-Navami" src="https://docs.google.com/forms/d/e/1FAIpQLSdWfKsIp_BpEk1pBendoxhIrtdvjGk3TZtYRb2kcbLcuMF40Q/viewform?embedded=true" width="1400" height="2349" display="flex" align-items="center" justify-content="center" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
         </Container>
       </StyledSection>
     </Element>

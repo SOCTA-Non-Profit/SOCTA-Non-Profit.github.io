@@ -39,7 +39,7 @@ export default function NotFound() {
 
   React.useEffect(
     function () {
-      document.title = `${name} | Portfolio`;
+      document.title = `${name} | Non Profit`;
     },
     [name]
   );

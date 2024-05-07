@@ -16,16 +16,44 @@ const StyledSection = styled.section`
 
 const images = [
   {
-    original: "https://picsum.photos/id/1018/1000/600/",
-    thumbnail: "https://picsum.photos/id/1018/250/150/",
+    original: "1.png",
+    thumbnail: "1.png",
   },
   {
-    original: "https://picsum.photos/id/1015/1000/600/",
-    thumbnail: "https://picsum.photos/id/1015/250/150/",
+    original: "2.png",
+    thumbnail: "2.png",
   },
   {
-    original: "https://picsum.photos/id/1019/1000/600/",
-    thumbnail: "https://picsum.photos/id/1019/250/150/",
+    original: "4.png",
+    thumbnail: "4.png",
+  },
+  {
+    original: "5.png",
+    thumbnail: "5.png",
+  },
+  {
+    original: "6.png",
+    thumbnail: "6.png",
+  },
+  {
+    original: "7.png",
+    thumbnail: "7.png",
+  },
+  {
+    original: "18.png",
+    thumbnail: "18.png",
+  },
+  {
+    original: "21.png",
+    thumbnail: "21.png",
+  },
+  {
+    original: "26.png",
+    thumbnail: "26.png",
+  },
+  {
+    original: "30.png",
+    thumbnail: "30.png",
   },
 ];
 

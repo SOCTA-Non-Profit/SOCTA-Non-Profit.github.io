@@ -67,7 +67,7 @@ export default function Contact() {
       <StyledSection className="d-flex flex-column justify-content-center">
         <Container className="d-flex">
           <Title>
-            <h2>SOCTA 2024 - Sri Rama Navami Kalyanam Gallery</h2>
+            <h2>SOCTA 2024 - Sita Rama Kalyanam Gallery</h2>
             <div className="underline"></div>
           </Title>
         
@@ -80,9 +80,9 @@ export default function Contact() {
         
           
         {/*<iframe title="SriRama-Navami" src="https://docs.google.com/forms/d/e/1FAIpQLSdWfKsIp_BpEk1pBendoxhIrtdvjGk3TZtYRb2kcbLcuMF40Q/viewform?embedded=true" width="1400" height="2349" display="flex" align-items="center" justify-content="center" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>*/}
-        
+        <ImageGallery items={images} />
       </StyledSection>
-      <ImageGallery items={images} />
+      
     </Element>
   );
 }

@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.07a82b24.css",
-    "main.js": "/static/js/main.87c6b045.js",
+    "main.js": "/static/js/main.4ed88ac6.js",
     "static/media/sri-rama-navami-promo.mp4": "/static/media/sri-rama-navami-promo.f75fabcfc21ab65eaeb2.mp4",
     "static/media/socta.jpeg": "/static/media/socta.bbb7555734099ad2fcb0.jpeg",
     "service-worker.js": "/service-worker.js",
@@ -10,10 +10,10 @@
     "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/index.html",
     "main.07a82b24.css.map": "/static/css/main.07a82b24.css.map",
-    "main.87c6b045.js.map": "/static/js/main.87c6b045.js.map"
+    "main.4ed88ac6.js.map": "/static/js/main.4ed88ac6.js.map"
   },
   "entrypoints": [
     "static/css/main.07a82b24.css",
-    "static/js/main.87c6b045.js"
+    "static/js/main.4ed88ac6.js"
   ]
 }

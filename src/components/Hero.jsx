@@ -94,6 +94,7 @@ export default function Hero() {
   return (
     <StyledHero>
       <Container>
+      
         <Row className="align-items-center text-center">
           <Col>
             <div className="d-flex align-items-center justify-content-center">

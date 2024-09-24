@@ -10,6 +10,7 @@ import Projects from "../components/Projects";
 import Contact from "../components/Contact";
 import { BackToTop } from "../components/globalStyledComponents";
 import Footer from "../components/Footer";
+import './Home.css';
 
 export default function Home() {
   const { name } = useSelector(selectData);
@@ -26,7 +27,13 @@ export default function Home() {
 
   return (
     <>
+    
       <Hero />
+      <div className="scrolling-banner">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScd7hlK2dPK0kQ1uA2MH5qXbXxG0D4iGPVk-gzXBczQ6DkppA/viewform" target="_blank" rel="noopener noreferrer" className="register-link">
+          Update: SOCTA 2024 is Organizing Bathukamma Event in RIM Park. Click on this Scrolling Banner to Register for the Event
+        </a>
+      </div>
       <main>
         <AboutMe />
         <Skills />

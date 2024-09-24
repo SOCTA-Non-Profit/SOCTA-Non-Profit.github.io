@@ -41,7 +41,7 @@ export const Title = styled.div`
 
   .underline {
     height: 0.25rem;
-    width: 75%;
+    width: 25%;
     min-width: 3rem;
     border-radius: 0.25rem;
     background: var(--clr-primary-5);

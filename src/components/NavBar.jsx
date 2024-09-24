@@ -10,6 +10,7 @@ import { Icon } from "@iconify/react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 // Images
 import Logo from "./defaultNavLogo.svg";
+import socta_logo from '../images/SOCTA_Logo.jpg';
 
 // #region styled-components
 const StyledSwitch = styled.label`
@@ -87,7 +88,7 @@ export default function NavBar({ Logo }) {
     to: [
       { id: "1T", name: "Home", to: "Home" },
       { id: "2T", name: "About Socta", to: "About" },
-      { id: "3T", name: "Upcoming Events", to: "Skills" },
+      { id: "3T", name: "Bathukamma 2024", to: "Skills" },
       { id: "5T", name: "Sita Rama Kalyanam 2024 Event Gallery", to: "Contact" },
     ],
   };
@@ -110,6 +111,11 @@ export default function NavBar({ Logo }) {
             onClick={toggleExpanded}
           />
           <Navbar.Collapse id="responsive-navbar-nav">
+           <Nav className="me-auto">
+              <Nav.Item>
+                <img src={socta_logo} alt="SOCTA Logo" style={{ height: '80px', width: '80px',borderRadius: '50%' }} />
+              </Nav.Item>
+            </Nav>
             <Nav navbarScroll className="me-auto">
               {pathname === "/"
                 ? navLinks.to.map((el) => {
@@ -145,6 +151,7 @@ export default function NavBar({ Logo }) {
                     );
                   })}
             </Nav>
+            
             <Nav>
               <ThemeToggle />
             </Nav>

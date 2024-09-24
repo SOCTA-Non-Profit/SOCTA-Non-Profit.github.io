@@ -63,7 +63,7 @@ const StyledHero = styled.header`
         theme.name === "light"
           ? `url(${Light}) top center fixed no-repeat`
           : `url(${Dark}) top center fixed no-repeat`};
-      background-size: 100vw auto;
+      background-size: contain;
     }
   }
 
@@ -73,7 +73,7 @@ const StyledHero = styled.header`
         theme.name === "light"
           ? `url(${Light}) center center fixed no-repeat`
           : `url(${Dark}) center center fixed no-repeat`};
-      background-size: cover;
+      background-size: contain;
     }
   }
   @media screen and (max-width: 767px) {
@@ -94,6 +94,7 @@ export default function Hero() {
   return (
     <StyledHero>
       <Container>
+      
         <Row className="align-items-center text-center">
           <Col>
             <div className="d-flex align-items-center justify-content-center">

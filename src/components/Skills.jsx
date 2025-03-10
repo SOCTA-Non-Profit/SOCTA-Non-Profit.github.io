@@ -15,7 +15,16 @@ export default function Skills() {
       <section className="section">
         <Container className="text-center">
           <Title>
-            <h2>Bathukamma 2024 Event</h2>
+            <h2>2025 Sri Rama Navami Event - April 12 2025</h2>
+            <p>
+            <a href="https://bit.ly/SOCTASitaRamaKalyanam"> 
+            <Button>Register for the Event</Button>
+            </a>
+            </p>
+            <div className="underline"></div>
+          </Title>
+          <Title>
+            <h2>Past Event in October 2024 : Bathukamma Event</h2>
             <p>
             <a href="https://docs.google.com/forms/d/e/1FAIpQLScd7hlK2dPK0kQ1uA2MH5qXbXxG0D4iGPVk-gzXBczQ6DkppA/viewform"> 
             <Button>Register for the Event</Button>

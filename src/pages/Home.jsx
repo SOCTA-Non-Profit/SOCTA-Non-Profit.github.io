@@ -30,8 +30,8 @@ export default function Home() {
     
       <Hero />
       <div className="scrolling-banner">
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLScd7hlK2dPK0kQ1uA2MH5qXbXxG0D4iGPVk-gzXBczQ6DkppA/viewform" target="_blank" rel="noopener noreferrer" className="register-link">
-          Update: SOCTA 2024 is Organizing Bathukamma Event in RIM Park. Click on this Scrolling Banner to Register for the Event
+        <a href="https://bit.ly/SOCTASitaRamaKalyanam" target="_blank" rel="noopener noreferrer" className="register-link">
+          Update: SOCTA 2025 is Organizing Sri Rama Navami Event in The Guelph Estgate. Click on this Scrolling Banner to Register for the Event
         </a>
       </div>
       <main>
@@ -42,21 +42,21 @@ export default function Home() {
       <BackToTop home={"Home"} />
       <Footer />
       <Button variant="primary" onClick={handleShow} style={{ position: 'fixed', align: 'center', bottom: '20px', right: '20px' }}>
-        Register for Bathukamma Event
+      Register for Sri Rama Navami Event - 2025
       </Button>
 
       <Modal show={showModal} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title style={{color: 'black',fontWeight: 'bold'}}>Register for Bathukamma Event</Modal.Title>
+          <Modal.Title style={{color: 'black',fontWeight: 'bold'}}>Register for Sri Rama Navami Event - 2025</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <p style={{color: 'black',fontWeight: 'bold'}}>
             <br />
-            <span style={{ textDecoration: 'underline', color: 'red', fontWeight: 'bold' }}>Date:</span>  Oct 6th, 2024 Time: 4PM Onwards
+            <span style={{ textDecoration: 'underline', color: 'red', fontWeight: 'bold' }}>Date:</span>  April 12th 2025 Time: 10 AM to 4 PM
             <br />
-            <span style={{ textDecoration: 'underline', color: 'red', fontWeight: 'bold' }}>Venue:</span> RIM Park
+            <span style={{ textDecoration: 'underline', color: 'red', fontWeight: 'bold' }}>Venue:</span> The Guelph Estate 
             <br />
-            <span style={{ textDecoration: 'underline', color: 'red', fontWeight: 'bold' }}>Address:</span> 2001 University Ave E, Waterloo, ON N2K 4K4
+            <span style={{ textDecoration: 'underline', color: 'red', fontWeight: 'bold' }}>Address:</span> #26-340 Woodlawn Rd W, Guelph, ON N1H 1G1
             <br />
             For any questions or info Email us at: contact.socta@gmail.com
             <br />
@@ -70,9 +70,9 @@ export default function Home() {
           </Button>
           <Button
             variant="primary"
-            onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLScd7hlK2dPK0kQ1uA2MH5qXbXxG0D4iGPVk-gzXBczQ6DkppA/viewform', '_blank')}
+            onClick={() => window.open('https://bit.ly/SOCTASitaRamaKalyanam', '_blank')}
           >
-           Register for Bathukamma 2024 Event
+           Register for Sri Rama Navami 2025 Event
           </Button>
         </Modal.Footer>
       </Modal>

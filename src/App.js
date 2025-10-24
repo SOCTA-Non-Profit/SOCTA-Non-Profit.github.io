@@ -22,6 +22,11 @@ import NavBar from "./components/NavBar";
 import Home from "./pages/Home";
 import AllProjects from "./pages/AllProjects";
 import NotFound from "./pages/NotFound";
+import SRK2025 from "./pages/SRK2025";
+import Events from "./pages/Events";
+import Membership from "./pages/Membership";
+import Gallery from "./pages/Gallery";
+import BoardMembers from "./pages/BoardMembers";
 
 const darkMode = window.matchMedia("(prefers-color-scheme: light)").matches;
 const themes = {
@@ -89,7 +94,12 @@ export default function App() {
           </Element>
           <Routes>
             <Route exact path="/" element={<Home />} />
+            <Route path="/events" element={<Events />} />
+            <Route path="/membership" element={<Membership />} />
+            <Route path="/gallery" element={<Gallery />} />
+            <Route path="/board" element={<BoardMembers />} />
             <Route path="/All-Projects" element={<AllProjects />} />
+            <Route path="/SRK2025" element={<SRK2025 />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </ThemeProvider>

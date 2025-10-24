@@ -83,13 +83,17 @@ export default function NavBar({ Logo }) {
   const navLinks = {
     routes: [
       { id: "1R", name: "Home", route: "/" },
-      { id: "2R", name: "All Projects", route: "/All-Projects" },
+      { id: "2R", name: "Events", route: "/events" },
+      { id: "3R", name: "Membership", route: "/membership" },
+      { id: "4R", name: "Gallery", route: "/gallery" },
+      { id: "5R", name: "Board", route: "/board" },
+      { id: "6R", name: "SRK2025", route: "/SRK2025" },
     ],
     to: [
       { id: "1T", name: "Home", to: "Home" },
-      { id: "2T", name: "About Socta", to: "About" },
-      { id: "3T", name: "Bathukamma 2024", to: "Skills" },
-      { id: "5T", name: "Sita Rama Kalyanam 2024 Event Gallery", to: "Contact" },
+      { id: "2T", name: "About SOCTA", to: "About" },
+      { id: "3T", name: "What We Offer", to: "Skills" },
+      { id: "4T", name: "Contact", to: "Contact" },
     ],
   };
 
@@ -164,4 +168,3 @@ export default function NavBar({ Logo }) {
 
 NavBar.propTypes = propTypes;
 NavBar.defaultProps = defaultProps;
-// #endregion

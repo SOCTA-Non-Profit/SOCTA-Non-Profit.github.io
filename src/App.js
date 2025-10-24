@@ -28,46 +28,29 @@ import Membership from "./pages/Membership";
 import Gallery from "./pages/Gallery";
 import BoardMembers from "./pages/BoardMembers";
 
-const darkMode = window.matchMedia("(prefers-color-scheme: light)").matches;
-const themes = {
-  light: {
-    name: "light",
-    color: "#45413C",
-    background: "#F5F2E8",
-  },
-  dark: {
-    name: "dark",
-    color: "#FBFDFF",
-    background: "#27272A",
-  },
+// Only light theme - dark mode removed
+const theme = {
+  name: "light",
+  color: "#2C1810", /* Dark brown for text */
+  background: "#FFFFFF", /* Pure white background */
 };
 
 export default function App() {
-  const { theme, setTheme } = useAppContext();
   const isLoading = useSelector(selectIsLoading);
   const error = useSelector(selectError);
   const dispatch = useDispatch();
 
   React.useEffect(
     function () {
-      const updateTheme = () =>
-        darkMode ? setTheme("dark") : setTheme("light");
-      updateTheme();
       dispatch(fetchGitHubInfo());
       dispatch(fetchGitHubReops());
     },
-    [setTheme, dispatch]
+    [dispatch]
   );
-
-  window
-    .matchMedia("(prefers-color-scheme: dark)")
-    .addEventListener("change", (e) =>
-      e.matches ? setTheme("dark") : setTheme("light")
-    );
 
   if (isLoading) {
     return (
-      <ThemeProvider theme={themes[theme]}>
+      <ThemeProvider theme={theme}>
         <GlobalStyles />
         <Container className="d-flex vh-100 align-items-center">
           <Loading />
@@ -76,7 +59,7 @@ export default function App() {
     );
   } else if (error) {
     return (
-      <ThemeProvider theme={themes[theme]}>
+      <ThemeProvider theme={theme}>
         <GlobalStyles />
         <Container className="d-flex vh-100 align-items-center justify-content-center">
           <h2>{error}</h2>
@@ -86,7 +69,7 @@ export default function App() {
   } else {
     return (
       <HashRouter>
-        <ThemeProvider theme={themes[theme]}>
+        <ThemeProvider theme={theme}>
           <ScrollToTop />
           <GlobalStyles />
           <Element name={"Home"} id="home">

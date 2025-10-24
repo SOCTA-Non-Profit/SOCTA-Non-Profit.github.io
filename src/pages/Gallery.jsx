@@ -283,34 +283,44 @@ export default function Gallery() {
     setCurrentImageIndex(0);
   };
 
-  const nextImage = () => {
+  const nextImage = React.useCallback(() => {
     if (selectedAlbum && currentImageIndex < selectedAlbum.images.length - 1) {
-      setCurrentImageIndex(currentImageIndex + 1);
+      setCurrentImageIndex(prev => prev + 1);
     }
-  };
+  }, [selectedAlbum, currentImageIndex]);
 
-  const prevImage = () => {
+  const prevImage = React.useCallback(() => {
     if (currentImageIndex > 0) {
-      setCurrentImageIndex(currentImageIndex - 1);
+      setCurrentImageIndex(prev => prev - 1);
     }
-  };
-
-  const handleKeyPress = React.useCallback((e) => {
-    if (e.key === 'ArrowRight') nextImage();
-    if (e.key === 'ArrowLeft') prevImage();
-    if (e.key === 'Escape') closeLightbox();
-  }, [currentImageIndex, selectedAlbum]);
+  }, [currentImageIndex]);
 
   React.useEffect(() => {
     document.title = "Photo Gallery - SOCTA";
   }, []);
 
   React.useEffect(() => {
+    const handleKeyPress = (e) => {
+      if (e.key === 'ArrowRight') {
+        if (selectedAlbum && currentImageIndex < selectedAlbum.images.length - 1) {
+          setCurrentImageIndex(prev => prev + 1);
+        }
+      }
+      if (e.key === 'ArrowLeft') {
+        if (currentImageIndex > 0) {
+          setCurrentImageIndex(prev => prev - 1);
+        }
+      }
+      if (e.key === 'Escape') {
+        setLightboxOpen(false);
+      }
+    };
+
     if (lightboxOpen) {
       document.addEventListener('keydown', handleKeyPress);
       return () => document.removeEventListener('keydown', handleKeyPress);
     }
-  }, [lightboxOpen, handleKeyPress]);
+  }, [lightboxOpen, currentImageIndex, selectedAlbum]);
 
   return (
     <>

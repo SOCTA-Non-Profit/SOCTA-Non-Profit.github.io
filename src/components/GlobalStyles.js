@@ -1,21 +1,32 @@
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
+/* Import modern fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap');
+
 /*
 =============== 
 Variables
 ===============
 */
 :root {
-  --primary-light: #b0edfd;
-  /* Primary Color */
-  --primary: #61DBFB;
-  --primary-dark: #316e7e;
-  --border: 1px solid #61DBFB;
+  /* Telugu Cultural Colors */
+  --primary-light: #FFD700; /* Gold/Yellow - Auspicious color */
+  --primary: #FF6B35; /* Vibrant Orange - Traditional Telugu color */
+  --primary-dark: #C62828; /* Deep Red - Sacred color */
+  --secondary: #4CAF50; /* Green - Prosperity */
+  --accent-gold: #FFD700; /* Gold - Traditional */
+  --accent-red: #D32F2F; /* Red - Sacred/Festival color */
+  --border: 1px solid #FF6B35;
   --transition: all 0.3s linear;
-  --nav-height: 61px;
+  --nav-height: 80px;
   --min-footer-height: 11vh;
   --card-height: 29rem;
+  
+  /* Cultural gradient combinations */
+  --gradient-primary: linear-gradient(135deg, #FF6B35 0%, #FFD700 100%);
+  --gradient-festival: linear-gradient(135deg, #D32F2F 0%, #FF6B35 100%);
+  --gradient-prosperity: linear-gradient(135deg, #4CAF50 0%, #FFD700 100%);
 }
 
 /*
@@ -23,9 +34,18 @@ Variables
 Global Styles
 ===============
 */
+* {
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+}
+
 body {
-  background: ${({ theme }) => theme.background};
-  color: ${({ theme }) => theme.color};
+  background: #FFFFFF;
+  color: #2C1810;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
 }
 
 a:hover {
@@ -34,11 +54,6 @@ a:hover {
 
 .navbar {
   border-bottom: var(--border);
-
-  img {
-    background: ${({ theme }) =>
-      theme.name === "light" ? "#45413C" : "#797B7B"};
-  }
 }
 
 .link-icons {

@@ -1,20 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.5676dd0c.css",
-    "main.js": "/static/js/main.6b2bff27.js",
+    "main.js": "/static/js/main.b0d84829.js",
     "static/media/sri-rama-navami-promo.mp4": "/static/media/sri-rama-navami-promo.f75fabcfc21ab65eaeb2.mp4",
-    "static/media/Bathukamma_Flyer.jpg": "/static/media/Bathukamma_Flyer.65b32ad78ce07039b5d2.jpg",
+    "static/media/SRK_2025_Flyer.jpg": "/static/media/SRK_2025_Flyer.b19eaeca035ecc142f12.jpg",
     "static/media/SOCTA_Logo.jpg": "/static/media/SOCTA_Logo.daa77468f1c9c1bbe065.jpg",
     "service-worker.js": "/service-worker.js",
     "static/media/GH.svg": "/static/media/GH.b9e9a9aa6f05e9dfe5dcb8991bda3e4d.svg",
-    "static/media/defaultNavLogo.svg": "/static/media/defaultNavLogo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/index.html",
     "main.5676dd0c.css.map": "/static/css/main.5676dd0c.css.map",
-    "main.6b2bff27.js.map": "/static/js/main.6b2bff27.js.map"
+    "main.b0d84829.js.map": "/static/js/main.b0d84829.js.map"
   },
   "entrypoints": [
     "static/css/main.5676dd0c.css",
-    "static/js/main.6b2bff27.js"
+    "static/js/main.b0d84829.js"
   ]
 }

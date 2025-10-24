@@ -22,47 +22,35 @@ import NavBar from "./components/NavBar";
 import Home from "./pages/Home";
 import AllProjects from "./pages/AllProjects";
 import NotFound from "./pages/NotFound";
+import SRK2025 from "./pages/SRK2025";
+import Events from "./pages/Events";
+import Membership from "./pages/Membership";
+import Gallery from "./pages/Gallery";
+import BoardMembers from "./pages/BoardMembers";
 
-const darkMode = window.matchMedia("(prefers-color-scheme: light)").matches;
-const themes = {
-  light: {
-    name: "light",
-    color: "#45413C",
-    background: "#F5F2E8",
-  },
-  dark: {
-    name: "dark",
-    color: "#FBFDFF",
-    background: "#27272A",
-  },
+// Only light theme - dark mode removed
+const theme = {
+  name: "light",
+  color: "#2C1810", /* Dark brown for text */
+  background: "#FFFFFF", /* Pure white background */
 };
 
 export default function App() {
-  const { theme, setTheme } = useAppContext();
   const isLoading = useSelector(selectIsLoading);
   const error = useSelector(selectError);
   const dispatch = useDispatch();
 
   React.useEffect(
     function () {
-      const updateTheme = () =>
-        darkMode ? setTheme("dark") : setTheme("light");
-      updateTheme();
       dispatch(fetchGitHubInfo());
       dispatch(fetchGitHubReops());
     },
-    [setTheme, dispatch]
+    [dispatch]
   );
-
-  window
-    .matchMedia("(prefers-color-scheme: dark)")
-    .addEventListener("change", (e) =>
-      e.matches ? setTheme("dark") : setTheme("light")
-    );
 
   if (isLoading) {
     return (
-      <ThemeProvider theme={themes[theme]}>
+      <ThemeProvider theme={theme}>
         <GlobalStyles />
         <Container className="d-flex vh-100 align-items-center">
           <Loading />
@@ -71,7 +59,7 @@ export default function App() {
     );
   } else if (error) {
     return (
-      <ThemeProvider theme={themes[theme]}>
+      <ThemeProvider theme={theme}>
         <GlobalStyles />
         <Container className="d-flex vh-100 align-items-center justify-content-center">
           <h2>{error}</h2>
@@ -81,7 +69,7 @@ export default function App() {
   } else {
     return (
       <HashRouter>
-        <ThemeProvider theme={themes[theme]}>
+        <ThemeProvider theme={theme}>
           <ScrollToTop />
           <GlobalStyles />
           <Element name={"Home"} id="home">
@@ -89,7 +77,12 @@ export default function App() {
           </Element>
           <Routes>
             <Route exact path="/" element={<Home />} />
+            <Route path="/events" element={<Events />} />
+            <Route path="/membership" element={<Membership />} />
+            <Route path="/gallery" element={<Gallery />} />
+            <Route path="/board" element={<BoardMembers />} />
             <Route path="/All-Projects" element={<AllProjects />} />
+            <Route path="/SRK2025" element={<SRK2025 />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </ThemeProvider>

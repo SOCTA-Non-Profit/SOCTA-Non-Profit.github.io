@@ -8,8 +8,8 @@ import { Icon } from "@iconify/react";
 import Logo from "./images/logo.svg";
 
 // Hero Images (add your images to the /images directory with the same names)
-import HeroLight from "./images/Bathukamma_Flyer.jpg";
-import HeroDark from "./images/Bathukamma_Flyer.jpg";
+import HeroLight from "./images/SRK_2025_Flyer.jpg";
+import HeroDark from "./images/SRK_2025_Flyer.jpg";
 // If you change the import names above then you need to change the export names below
 export { HeroLight as Light };
 export { HeroDark as Dark };

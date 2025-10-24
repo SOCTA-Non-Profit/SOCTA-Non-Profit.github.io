@@ -15,7 +15,15 @@ export default function Skills() {
       <section className="section">
         <Container className="text-center">
           <Title>
-            <h2>Bathukamma 2024 Event</h2>
+            <h1>2025 Sri Rama Navami Event - April 12 2025</h1>
+            <p>
+            <a href="https://bit.ly/SOCTASitaRamaKalyanam"> 
+            <Button>Register for the Event</Button>
+            </a>
+            </p>
+          </Title>
+          {/* <Title>
+            <h2>Past Event in October 2024 : Bathukamma Event</h2>
             <p>
             <a href="https://docs.google.com/forms/d/e/1FAIpQLScd7hlK2dPK0kQ1uA2MH5qXbXxG0D4iGPVk-gzXBczQ6DkppA/viewform"> 
             <Button>Register for the Event</Button>
@@ -32,18 +40,7 @@ export default function Skills() {
                 Your browser does not support the video tag.
               </video>
             </Col>
-          </Row>
-          {resume && (
-            <a href={resume}>
-              <Button
-                size="lg"
-                variant={theme === "light" ? "outline-dark" : "outline-light"}
-                className="mt-5"
-              >
-                R&eacute;sum&eacute;
-              </Button>
-            </a>
-          )}
+          </Row> */}
         </Container>
       </section>
     </Element>
